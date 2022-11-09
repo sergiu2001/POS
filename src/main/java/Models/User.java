@@ -5,9 +5,9 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private int money;
+    private float money;
 
-    public User(String surname, String name, String email, String password, int money) {
+    public User(String surname, String name, String email, String password, float money) {
         this.surname = surname;
         this.name = name;
         this.email = email;
@@ -47,11 +47,11 @@ public class User {
         this.password = password;
     }
 
-    public int getMoney() {
+    public float getMoney() {
         return money;
     }
 
-    public void setMoney(int money) {
+    public void setMoney(float money) {
         this.money = money;
     }
 }
