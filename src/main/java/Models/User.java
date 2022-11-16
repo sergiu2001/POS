@@ -1,18 +1,28 @@
 package Models;
 
 public class User {
+    private int id;
     private String surname;
     private String name;
     private String email;
     private String password;
     private float money;
 
-    public User(String surname, String name, String email, String password, float money) {
+    public User(int id, String surname, String name, String email, String password, float money) {
+        this.id = id;
         this.surname = surname;
         this.name = name;
         this.email = email;
         this.password = password;
         this.money = money;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getSurname() {
